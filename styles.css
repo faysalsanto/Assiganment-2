@@ -56,15 +56,13 @@ img {
 }
 
 .watch {
-    text-decoration: none;
-    font-size: 16px;
-    background-color: red;
-    color: white;
-    margin: 30px;
-    padding: 16px;
+    padding: 16px 25px;
+    background-color: #DD0000;
+    margin-top: 10px;
     border-radius: 5px;
-
+    width: 20%;
 }
+
 
 /* banner end  */
 .banner-end {
@@ -188,4 +186,87 @@ button.active {
 .footer ul li {
     display: inline-block;
     padding: 0 15px;
+}
+
+/* media queries ....... */
+@media only screen and (max-width:420px) {
+    .container {
+        width: 90%;
+        height: 100%;
+        margin: 20px 0px;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .upcoming {
+        width: 100%;
+    }
+
+    .banner-info {
+        padding: 20px;
+    }
+
+    .banner-end .footer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .banner-end {
+        flex-direction: column;
+    }
+
+    .blog-title {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .social,
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social a {
+        width: 100%;
+        display: block;
+    }
+
+    .list {}
+
+    .footer {
+        flex-direction: column;
+    }
+
+
+}
+
+/* tablet devices  */
+@media only screen and (min-width:481px) and (max-width:768px) {
+
+
+    .container {
+        width: 90%;
+        height: 100%;
+        margin: 20px 0px;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .upcoming {
+        width: 100%;
+    }
+
+    .upcoming-match {
+        display: flex;
+    }
+
+    .banner-info {
+        padding: 20px;
+    }
+
+    .banner-end {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
